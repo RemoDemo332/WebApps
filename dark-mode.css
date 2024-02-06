@@ -8,7 +8,6 @@ html, body {
     flex-direction: column;
 }
 
-/* Extending main to full height */
 main {
     flex-grow: 1;
 }
@@ -16,8 +15,8 @@ main {
 header, footer {
     display: flex;
     justify-content: space-between;
-    background-color: #08043f; 
-    color: white;
+    background-color: #0a081d; 
+    color: #797979;
     padding: 1em;
     width:100%;
 }
@@ -27,17 +26,16 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #08043f;
-    color: white;
+    background-color: #0a081d;
+    color: #797979;
     padding: 1em;
     width: 100%;
 }
-/* Justifying nav items */
 
 nav ul {
     list-style: none;
     display: flex;
-    background-color: #08043f; 
+    background-color: #0a081d; 
     margin: 0;
     padding-bottom: 2em;
 }
@@ -49,14 +47,9 @@ nav a {
     border: 2px solid transparent;
 }
 
-/* Hover color for links and active link highlight */
-
 nav a:hover, nav a.active {
-    border-color: white;
-    background-color: #0c6c8b;
+    border-color: #797979;
 }
-
-/* Gradient for h1 header */
 
 h1 {
     background: linear-gradient(to right, #17f7ff, #0c6c8b);
@@ -65,9 +58,9 @@ h1 {
 }
 
 h2 {
-    background-color: #08043f;
+    background-color: #0a081d;
     margin-top: 0px;
-    color: white;
+    color: #797979;
     padding-bottom: 60px;
     padding-left: 1em;
 }
@@ -81,8 +74,6 @@ h2::after {
     margin-top: 8px; 
 }
 
-/* Swapping contents justification and spanning when screen size is less than 768px */
-
 @media (max-width: 768px) {
     header, footer {
         flex-direction: column;
@@ -93,40 +84,26 @@ h2::after {
     }
 
     nav a {
-        width: 80vw;
+        width: 85vw;
         text-align: center;
     }
-
-    footer {
-        justify-items: left;
-    }
-
-    footer ul {
-        flex-direction: column;
-    }
-
-    footer a {
-        width: 80vw;
-        text-align: center;
-    }
-
 }
 
 nav ul li a {
-    background-color: #08043f;
-    border: 1px solid white; 
+    background-color: #0a081d;
+    border: 1px solid #797979; 
     padding: 10px; 
     margin: 5px; 
     display: inline-block;
 }
 
-/* Changing color of border when link box is hovered */
-
 nav ul li a:hover {
     border-color: #0c6c8b; 
 }
 
-/* Justifying footer contents */
+.active {
+    background-color: #0c6583; 
+}
 
 footer ul {
     list-style: none;
@@ -142,18 +119,17 @@ footer ul li a {
     color: white;
     text-decoration: none;
     padding: 0.5em;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #797979;
 }
 
 footer ul li a:hover {
-    border-color: white;
+    border-color: #797979;
 }
-
-/* Margin for social media link to space out between navbar items and copywright */
 
 p {
     margin-bottom: 0px;
     margin-top: 25px;
+    color: white;
 }
 
 /* h3 and h4 tags for resume content headers */
@@ -170,5 +146,11 @@ h4{
 
 .resume {
     padding-left: 2.5em;
-    padding-right: 2.5em;
+}
+
+/* Margin for social media link to space out between navbar items and copywright */
+
+main {
+    background-color: rgb(15, 15, 15);
+    color: white;
 }
